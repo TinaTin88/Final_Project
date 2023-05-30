@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Automation Suite" thread-count="2" parallel="tests">
+    <test name="LogInOne" parallel="tests" >
+        <classes>
+            <class name="Registration_Tests"/>
+        </classes>
+    </test>
+    <test name="LogInTwo" parallel="tests" >
+        <classes>
+            <class name="Basket_Tests"/>
+        </classes>
+    </test>
+    <test name="LogInThree" parallel="tests" >
+        <classes>
+            <class name="EE_Products_Tests"/>
+        </classes>
+    </test>
+    <test name="LogInFour" parallel="tests" >
+        <classes>
+            <class name="EE_Registration_Tests"/>
+        </classes>
+    </test>
+    <test name="LogInFive" parallel="tests" >
+        <classes>
+            <class name="HomePageBTNs_Tests"/>
+        </classes>
+    </test>
+
+</suite>
